@@ -5,16 +5,19 @@
     <link rel="stylesheet" href="/client/src/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mix Masters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="primary-header">
       <div class="container">
         <a href="#"><img src="/client/src/assets/images/mix-master-logo.png" alt="logo"></a>
         <nav class="priamry-navigation">
-            <ul class="nav-list">
-              <li><a href="#"></a>Home</li>
-              <li><a href="#"></a>Drinks</li>
-              <li><a href="#"></a>About</li>
+            <ul aria-label="Primary" role="list" class="nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Drinks</a></li>
+              <li><a href="#">About Us</a></li>
             </ul>
         </nav>
       </div>
@@ -29,8 +32,44 @@
           </div>
         </div>
       </section>
-      <section class="carousel"></section>
+      <section class="carousel">
+        <h2 class="fs-secondary-heading fw-bold">Check These Out!</h2>
+      </section>
     </main>
+
+    <footer>
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <a href="#"><img src="/client/src/assets/images/mix-master-logo.png" alt="logo"></a>
+            <ul role="list" aria-label="social links">
+              <li><a aria-label="facebook" href="#"></a></li>
+              <li><a aria-label="youtube" href="#"></a></li>
+              <li><a aria-label="twitter" href="#"></a></li>
+              <li><a aria-label="instagram" href="#"></a></li>
+              <li><a aria-label="tiktok" href="#"></a></li>
+            </ul>
+          </div>
+          <div>
+            <nav class="footer-nav">
+              <ul aria-label="Footer" role="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Drinks</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <form action="">
+              <p>Get our best cocktail recipes, tips, and more when you sign up for our newsletter.</p>
+              <input type="email">
+              <button>Sign Up</button>
+              <p>Copyright 2023. All Rights Reserved</p>
+            </form>
+          </div>
+        </div>     
+      </div> 
+    </footer>
   </body>
   <script type="module" src="/src/main.jsx"></script>
 </html>
